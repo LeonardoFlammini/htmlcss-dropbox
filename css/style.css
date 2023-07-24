@@ -53,27 +53,70 @@ body{
   margin: 0 auto;
 }
 
+.btn {
+  padding: 10px 20px;
+  background-color: var(--btn-blue);
+  color: white;
+  text-decoration: none;
+}
+
 /* Header */
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   height: 80px;
+  padding: 0 10px;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
 }
+
 
 header .h-left,
 header .h-right {
-  width: calc(100% / 3);
+  /* width: calc(100% / 3); */
   align-items: center;
+  /* flex-wrap: wrap; */
 }
 
-header .h-left div,
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav a{
+  display: inline-block;
+  height: 80px;
+  padding: 0 20px;
+  line-height: 80px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  border-bottom: 2px solid black;
+}
+
+/* header .h-left div,
 header .h-right div {
   flex-basis: calc(100% /4);
-}
+} */
 
 
 /* main */
+
+main {
+  padding-top: 80px;
+}
 
 .jumbotron {
   height: 500px; /*debug*/
