@@ -54,6 +54,7 @@ body{
 }
 
 .btn {
+  display: inline-block;
   padding: 10px 20px;
   background-color: var(--btn-blue);
   color: white;
@@ -69,7 +70,7 @@ header {
   right: 0;
   z-index: 999;
   height: 80px;
-  padding: 0 10px;
+  padding: 5px 10px;
   align-items: center;
   justify-content: space-between;
   background-color: white;
@@ -94,7 +95,7 @@ header nav ul li {
 
 header nav a{
   display: inline-block;
-  height: 80px;
+  height: 70px;
   padding: 0 20px;
   line-height: 80px;
   color: black;
@@ -119,7 +120,33 @@ main {
 }
 
 .jumbotron {
-  height: 500px; /*debug*/
   width: 100%; /*debug*/
   background-color: var(--jumbotron-bg);
+}
+
+.jumbotron .title {
+  display: block;
+  padding: 40px 0;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.jumbotron .image {
+  float: right;
+  width: 800px;
+}
+
+.jumbotron .image img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.jumbotron .btn {
+  margin: 20px 0;
+}
+
+.jumbotron .icon {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 3rem;
 }
