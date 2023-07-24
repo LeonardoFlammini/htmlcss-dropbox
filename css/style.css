@@ -7,3 +7,47 @@
 body{
   font-family: 'Open Sans', sans-serif;
 }
+
+.debug {
+  /* width: 100%; */
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.debug-2 {
+  height: 80px;
+  background-color: brown;
+  border: 1px solid black;
+}
+
+.d-flex {
+  display: flex;
+}
+
+header {
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .h-left {
+  width: 500px; /* debug */
+  
+  align-items: center;
+}
+
+header .h-right {
+  width: 500px; /* debug */
+  
+  align-items: center;
+  
+}
+
+
+
+header .h-left div {
+  flex-basis: calc(100% /4);
+}
+header .h-right div {
+  flex-basis: calc(100% /4);
+}
