@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+:root{
+  --jumbotron-bg : #B4D0E7;
+  --btn-blue : #0260FB;
+  --designit-bg : #A2D39B;
+  --designit-border : #D0E9CD;
+  --uf-bg : #3393CE;
+  --asu-bg : #621A2B;
+  --topps-bg : #ED462F;
+  --central-reader-bg : #F5F5F5;
+  --wbr-bg : #D63E2A;
+  --hearst-bg : #B4D0E6;
+  --lp-bg : #0D2481;
+  --clear-c-bg : #FDD833;
+  --banner-bg : #B4D0E7;
+  --banner-font : #5C160C;
+}
+
 body{
   font-family: 'Open Sans', sans-serif;
 }
@@ -24,30 +41,42 @@ body{
   display: flex;
 }
 
+.container-small{
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container-big{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+
 header {
   height: 80px;
   align-items: center;
   justify-content: space-between;
 }
 
-header .h-left {
-  width: 500px; /* debug */
-  
-  align-items: center;
-}
-
+header .h-left,
 header .h-right {
-  width: 500px; /* debug */
-  
+  width: calc(100% / 3);
   align-items: center;
-  
 }
 
-
-
-header .h-left div {
-  flex-basis: calc(100% /4);
-}
+header .h-left div,
 header .h-right div {
   flex-basis: calc(100% /4);
+}
+
+
+/* main */
+
+.jumbotron {
+  height: 500px; /*debug*/
+  width: 100%; /*debug*/
+  background-color: var(--jumbotron-bg);
 }
