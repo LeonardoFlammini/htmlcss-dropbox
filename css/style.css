@@ -52,7 +52,7 @@ body{
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .container-big{
@@ -67,10 +67,22 @@ body{
   background-color: var(--btn-blue);
   color: white;
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 .btn:hover {
   background-color: var(--btn-l-blue);
+  padding: 10px 25px;
+}
+
+.btn.blank {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.btn.blank:hover {
+  background-color: rgb(246, 246, 246);
 }
 
 .clearfix::after {
@@ -170,9 +182,15 @@ main {
   font-size: 3rem;
 }
 
+/* plans */
+
+main .plans {
+  padding-top: 150px;
+}
+
 /* plans-check */
 
-main .title {
+main .main-title {
   font-size: 1.8rem;
   font-weight: bold;
   padding-left: 5px;
@@ -359,6 +377,42 @@ main .enterprise .text .contact {
 main .enterprise .text .info {
   max-width: 600px;
 }
+
+/* contacts */
+
+main .contacts {
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .contacts .image {
+  flex-basis: 60%;
+  margin-right: 50px;
+}
+
+main .contacts .image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+main .contacts .text {
+  flex-basis: 40%;
+}
+
+main .contacts .text .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+main .contacts .text a {
+  margin-top: 20px;
+}
+main .contacts .text p {
+  text-align: justify;
+}
+
+
 
 /* footer */
 footer{
