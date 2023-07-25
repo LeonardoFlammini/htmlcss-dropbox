@@ -7,6 +7,7 @@
 :root{
   --jumbotron-bg : #B4D0E7;
   --btn-blue : #0260FB;
+  --btn-l-blue : #3b85fc;
   --designit-bg : #A2D39B;
   --designit-border : #D0E9CD;
   --uf-bg : #3393CE;
@@ -46,6 +47,7 @@ body{
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 150px 0;
 }
 
 .container-big{
@@ -60,6 +62,10 @@ body{
   background-color: var(--btn-blue);
   color: white;
   text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--btn-l-blue);
 }
 
 /* Header */
@@ -120,6 +126,8 @@ main {
   padding-top: 80px;
 }
 
+/* jumbotron */
+
 .jumbotron {
   width: 100%; /*debug*/
   background-color: var(--jumbotron-bg);
@@ -152,6 +160,102 @@ main {
   font-size: 3rem;
 }
 
+/* plans-check */
+
+main .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-bottom: 50px;
+}
+main .check {
+  align-items: center;
+}
+
+main .check-circle {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+main .check span {
+  margin-right: 5px;
+}
+
+main .ext-circle{
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  
+}
+
+main .inner-circle {
+  display: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+main .ext-circle:hover {
+  background-color: var(--btn-blue);
+}
+
+main .ext-circle:hover .inner-circle {
+  display: block;
+}
+
+/* plans-col */
+
+main .basic-plans {
+  width: 100%;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+/* col-title */
+
+main .col {
+  flex-basis: 33%;
+  border: 1px solid lightgray;
+}
+
+main .col-title {
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+main .col-title span {
+  padding-left: 5px;
+}
+
+/* col-info */
+
+main .col-info .title {
+  font-weight: bold;
+  padding: 40px 0 20px 30px;
+
+}
+
+main .col-info .price {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0 0 20px 30px;
+}
+
+main .col-info .billing {
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 0 0 50px 30px;
+  color: grey;
+}
 
 /* footer */
 footer{
