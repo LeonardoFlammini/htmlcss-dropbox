@@ -211,6 +211,8 @@ main .ext-circle:hover .inner-circle {
 
 /* plans-col */
 
+/* TODO: provare a mettere tutto il contenuto delle info in un div a cui dare padding e dare margin o padding 0 a tutti gli elementi  */
+
 main .basic-plans {
   width: 100%;
   align-items: stretch;
@@ -218,12 +220,18 @@ main .basic-plans {
   padding: 50px 0;
 }
 
-/* col-title */
-
 main .col {
-  flex-basis: 33%;
+  flex-basis: 30%;
   border: 1px solid lightgray;
 }
+
+main .col-info-top,
+.col-info-mid,
+.col-info-bottom {
+  padding-left: 30px;
+}
+
+/* col-title */
 
 main .col-title {
   align-items: center;
@@ -240,21 +248,63 @@ main .col-title span {
 
 main .col-info-top .title {
   font-weight: bold;
-  padding: 40px 0 20px 30px;
+  padding: 40px 0 20px 0;
 
 }
 
 main .col-info-top .price {
   font-size: 0.8rem;
   font-weight: 600;
-  padding: 0 0 20px 30px;
+  padding: 0 0 20px 0;
 }
 
 main .col-info-top .billing {
   font-size: 0.8rem;
   font-weight: 300;
-  padding: 0 0 50px 30px;
+  padding: 0 0 50px 0;
   color: grey;
+}
+
+/* col-info-mid */
+
+main .mid-list,
+main .bottom-list {
+  /* FIXME: centrare */
+  padding: 0 30px 50px 0;
+}
+
+main .mid-list li,
+main .bottom-list li {
+  padding: 5px 0;
+}
+
+main .col-info-mid .btn {
+  /* FIXME: centrare */
+}
+
+main .col-info-mid .buy {
+  display: inline-block;
+  padding: 50px 0;
+}
+
+main .col-info-mid .breakline{
+  width: 50px;
+  border-top: 1px solid lightgray;
+}
+
+/* col-info-bottom */
+
+main .col-info-bottom {
+  padding-top: 50px;
+}
+
+main .col-info-bottom .title {
+  font-size: 1rem;
+  padding-bottom: 30px;
+}
+
+main .bottom-list .fa-li {
+  color: var(--btn-blue);
 }
 
 /* footer */
