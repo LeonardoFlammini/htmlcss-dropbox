@@ -236,21 +236,21 @@ main .col-title span {
   padding-left: 5px;
 }
 
-/* col-info */
+/* col-info-top */
 
-main .col-info .title {
+main .col-info-top .title {
   font-weight: bold;
   padding: 40px 0 20px 30px;
 
 }
 
-main .col-info .price {
+main .col-info-top .price {
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0 0 20px 30px;
 }
 
-main .col-info .billing {
+main .col-info-top .billing {
   font-size: 0.8rem;
   font-weight: 300;
   padding: 0 0 50px 30px;
