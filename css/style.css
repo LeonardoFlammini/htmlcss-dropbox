@@ -271,11 +271,12 @@ main .mid-list,
 main .bottom-list {
   /* FIXME: centrare */
   padding: 0 30px 50px 0;
+  font-size: 0.9rem;
 }
 
 main .mid-list li,
 main .bottom-list li {
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 main .col-info-mid .btn {
