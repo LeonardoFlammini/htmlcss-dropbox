@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 :root{
   --jumbotron-bg : #B4D0E7;
   --btn-blue : #0260FB;
@@ -25,6 +29,7 @@
 body{
   font-family: 'Open Sans', sans-serif;
   background-color: white;
+  scroll-behavior: smooth;
 }
 
 .debug {
@@ -68,6 +73,12 @@ body{
   background-color: var(--btn-l-blue);
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Header */
 
 header {
@@ -87,9 +98,8 @@ header {
 
 header .h-left,
 header .h-right {
-  /* width: calc(100% / 3); */
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: nowrap;
 }
 
 header nav ul {
@@ -102,9 +112,9 @@ header nav ul li {
 
 header nav a{
   display: inline-block;
-  height: 70px;
+  height: 78px;
   padding: 0 20px;
-  line-height: 80px;
+  line-height: 78px;
   color: black;
   background-color: white;
   text-decoration: none;
@@ -190,6 +200,7 @@ main .ext-circle{
   background-color: white;
   border: 1px solid lightgrey;
   cursor: pointer;
+  transition: all 0.3s;
   
 }
 
@@ -217,10 +228,12 @@ main .basic-plans {
   width: 100%;
   align-items: stretch;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 50px 0;
 }
 
 main .col {
+  min-width: 230px;
   flex-basis: 30%;
   border: 1px solid lightgray;
 }
@@ -233,14 +246,16 @@ main .col-info-top,
 
 /* col-title */
 
-main .col-title {
+main .col-title,
+main .enterprise .title {
   align-items: center;
   justify-content: center;
   padding: 15px 0;
   border-bottom: 1px solid lightgrey;
 }
 
-main .col-title span {
+main .col-title span,
+main .enterprise .title span {
   padding-left: 5px;
 }
 
@@ -306,6 +321,43 @@ main .col-info-bottom .title {
 
 main .bottom-list .fa-li {
   color: var(--btn-blue);
+}
+
+/* enterprise */
+
+main .enterprise .row {
+  width: 100%;
+  border: 1px solid lightgray;
+}
+
+main .enterprise .title span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main .enterprise .text {
+  padding: 30px;
+}
+
+main .enterprise .text .description {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+
+}
+main .enterprise .text a{
+  float: right;
+}
+
+main .enterprise .text .contact {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+
+main .enterprise .text .info {
+  max-width: 600px;
 }
 
 /* footer */
