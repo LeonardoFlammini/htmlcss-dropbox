@@ -97,7 +97,7 @@ body{
 
 .small-square{
   width: calc(100% /2);
-  height: calc(100vh /2);
+  height: calc(100vw /6);
   align-items: center;
   justify-content: center;
 }
@@ -106,6 +106,11 @@ body{
   content: "";
   display: table;
   clear: both;
+}
+
+.breakline{
+  width: 50px;
+  border-top: 1px solid lightgray;
 }
 
 /* Header */
@@ -338,10 +343,7 @@ main .col-info-mid .buy {
   padding: 50px 0;
 }
 
-main .col-info-mid .breakline{
-  width: 50px;
-  border-top: 1px solid lightgray;
-}
+
 
 /* col-info-bottom */
 
@@ -467,7 +469,73 @@ main .clients h1 {
 }
 
 /* squares */
+#designit-sq {
+  position: relative;
+  background-color: var(--designit-bg);
+}
 
+#asu-sq {
+  position: relative;
+  background-color: var(--asu-bg);
+}
+
+#uf-sq {
+  position: relative;
+  background-color: var(--uf-bg);
+}
+
+#topps-sq {
+  position: relative;
+  background-color: var(--topps-bg);
+}
+
+#central-reader {
+  overflow: auto;
+  padding: 50px;
+  background-color: var(--central-reader-bg);
+}
+
+#wbr-sq{
+  position: relative;
+  background-color: var(--wbr-bg);
+}
+
+#hearst-sq {
+  position: relative;
+  background-color: var(--hearst-bg);
+}
+
+#lp-sq {
+  position: relative;
+  background-color: var(--lp-bg);
+}
+
+#clear-c-sq {
+  position: relative;
+  background-color: var(--clear-c-bg);
+}
+
+main .squares svg {
+  width: 50%;
+  fill: white;
+}
+
+main .squares .logo {
+  /* height: 150px */
+}
+
+main .squares .logo svg {
+  fill: black;
+}
+
+main .squares .breakline {
+  margin-bottom: 30px;
+}
+
+main .squares p {
+  display: inline-block; 
+  margin-bottom: 30px;
+}
 
 /* cta */
 
@@ -481,6 +549,17 @@ main .cta .container-small div {
   font-size: 3rem;
   font-weight: bold;
   color: var(--banner-font);
+}
+
+/* faq */
+
+main .faq h1 {
+  display: block;
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding-bottom: 50px;
+  border-bottom: 1px solid grey;
+  
 }
 
 /* footer */
