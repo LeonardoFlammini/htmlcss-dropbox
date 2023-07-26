@@ -551,15 +551,47 @@ main .cta .container-small div {
   color: var(--banner-font);
 }
 
-/* faq */
+main .faq .question {
+  font-weight: bold;
+  padding: 20px 0;
+}
 
-main .faq h1 {
+
+
+/* accordion */
+
+main .accordion h1 {
   display: block;
   font-size: 2rem;
   text-transform: capitalize;
   padding-bottom: 50px;
   border-bottom: 1px solid grey;
   
+}
+
+main .faq {
+  border-bottom: 1px solid grey;
+}
+
+main .faq .arrow {
+  float: right;
+}
+
+main .faq p {
+  display: none;
+  padding-bottom: 30px;
+}
+
+main .faq .arrow,
+main .faq p {
+  transition: all 0.1s;
+}
+
+main .faq:hover p {
+  display: block;
+}
+main .faq:hover .arrow {
+  transform: rotate(180deg);
 }
 
 /* footer */
