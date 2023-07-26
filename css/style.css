@@ -15,13 +15,20 @@ html{
   --designit-bg : #A2D39B;
   --designit-border : #D0E9CD;
   --uf-bg : #3393CE;
+  --uf-border : #7ca4bd;
   --asu-bg : #621A2B;
+  --asu-border : #5e434a;
   --topps-bg : #ED462F;
+  --topps-border : #e9a79f;
   --central-reader-bg : #F5F5F5;
   --wbr-bg : #D63E2A;
+  --wbr-border : #d7a29b;
   --hearst-bg : #B4D0E6;
+  --hearst-border : #d5dadf;
   --lp-bg : #0D2481;
+  --lp-border : #575c72;
   --clear-c-bg : #FDD833;
+  --clear-c-border : #fdeeac;
   --banner-bg : #B4D0E7;
   --banner-font : #5C160C;
 }
@@ -111,6 +118,15 @@ body{
 .breakline{
   width: 50px;
   border-top: 1px solid lightgray;
+}
+
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
 }
 
 /* Header */
@@ -469,24 +485,42 @@ main .clients h1 {
 }
 
 /* squares */
+
+
 #designit-sq {
   position: relative;
   background-color: var(--designit-bg);
+}
+#designit-sq:active .frame{
+  display: block;
+  border: 10px solid var(--designit-border);
 }
 
 #asu-sq {
   position: relative;
   background-color: var(--asu-bg);
 }
+#asu-sq:active .frame{
+  display: block;
+  border: 10px solid var(--asu-border);
+}
 
 #uf-sq {
   position: relative;
   background-color: var(--uf-bg);
 }
+#uf-sq:active .frame{
+  display: block;
+  border: 10px solid var(--uf-border);
+}
 
 #topps-sq {
   position: relative;
   background-color: var(--topps-bg);
+}
+#topps-sq:active .frame{
+  display: block;
+  border: 10px solid var(--topps-border);
 }
 
 #central-reader {
@@ -499,20 +533,36 @@ main .clients h1 {
   position: relative;
   background-color: var(--wbr-bg);
 }
+#wbr-sq:active .frame{
+  display: block;
+  border: 10px solid var(--wbr-border);
+}
 
 #hearst-sq {
   position: relative;
   background-color: var(--hearst-bg);
+}
+#hearst-sq:active .frame{
+  display: block;
+  border: 10px solid var(--hearst-border);
 }
 
 #lp-sq {
   position: relative;
   background-color: var(--lp-bg);
 }
+#lp-sq:active .frame{
+  display: block;
+  border: 10px solid var(--lp-border);
+}
 
 #clear-c-sq {
   position: relative;
   background-color: var(--clear-c-bg);
+}
+#clear-c-sq:active .frame{
+  display: block;
+  border: 10px solid var(--clear-c-border);
 }
 
 main .squares svg {
@@ -520,9 +570,6 @@ main .squares svg {
   fill: white;
 }
 
-main .squares .logo {
-  /* height: 150px */
-}
 
 main .squares .logo svg {
   fill: black;
